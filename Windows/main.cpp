@@ -48,12 +48,28 @@ namespace MAIN {
         };
         int createPrivateKey(int type) {
             
-            
+            if (type == 0) {
+                
+                
+                
+            };
             
         };
         int createPublicKey(int type, string privatekey) {
             
-            
+            if (type == 0) {
+                
+                
+                
+            } else if (type == 1) {
+                
+                
+                
+            } else if (type == 2) {
+                
+                
+                
+            };
             
         };
         
