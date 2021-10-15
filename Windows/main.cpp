@@ -21,7 +21,7 @@ namespace MAIN {
     };
     int GUI() {
         
-        string images = {};
+        int app = { "appXSize": 1920, "appYSize": 1080, "buttons": { "home": { "xSize": 100, "ySize": 50, "images": { "dark": "", "light": "" } }, "transactions": { "xSize": 100, "ySize": 50, "images": { "dark": "", "light": "" } }, "options": { "xSize": 100, "ySize": 50, "images": { "dark": "", "light": "" } } } };
         
     };
     int INTERNET() {
