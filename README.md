@@ -1,2 +1,3 @@
-# Marscoin-DAPP-Wallet
-This is the official repository of the Marscoin Digital App Wallet founded by AyzeLYC.
+# Marscoin Digital Applications Node
+
+This is the official repository of the Marscoin Digital Applications Node founded by AyzeLYC.
