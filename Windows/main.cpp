@@ -18,6 +18,7 @@ namespace MAIN {
         _WALLET_.init(config["datas_path"["wallet_file"]]);
         _INTERNET_.init();
         _BLOCKCHAIN_.init();
+        _INSTRUCTIONS_.init();
         
     };
     
