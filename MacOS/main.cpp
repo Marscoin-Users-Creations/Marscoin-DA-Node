@@ -10,7 +10,11 @@ namespace _MAIN_ {
     
     int _INIT_() {
         
-        
+        _UI_.init();
+        _NODEFileSystem_.init();
+        _WALLET_.init();
+        _INTERNET_.init();
+        _BLOCKCHAIN_.init();
         
     };
     
