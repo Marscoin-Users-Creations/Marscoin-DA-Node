@@ -11,8 +11,19 @@
 
 namespace MAIN {
     
+    function find_available_peers(int peers_list) {
+        
+        if (_INTERNET_.btclient.recv()["peers"] == 32) {
+            
+            
+            
+        };
+        
+    }
+    
     int init() {
         
+        _THREADING_.init();
         _UI_.init();
         _NODEFileSystem_.init();
         _WALLET_.init(config["datas_path"["wallet_file"]]);
@@ -20,6 +31,16 @@ namespace MAIN {
         _BLOCKCHAIN_.init();
         _INSTRUCTIONS_.init();
         
+        if (peers.size() >= 32) {
+            
+            find_available_peers(peers);
+            
+        } else {
+            
+            
+            
+        };
+        
     };
     
-};
+}
