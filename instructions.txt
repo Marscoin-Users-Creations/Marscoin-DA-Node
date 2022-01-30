@@ -1,0 +1,128 @@
+Smart contracts instructions list ( example ) :
+
+Functions :
+
+FUNC name() <==> C++ int / double / float / string -- create a new function with the value specified
+
+if(unsigned int vn, unsigned int vc1, unsigned int vc2, unsigned int operations) <==> vn = variables number, vc1 = variables content, vc2 = variables, operations = operations the if will do,C++ if
+C++ if -- if something condition something then something
+RIF() <==> C++ if something return something
+IFELSE() <==> C++ if something then else something
+RIFELSE() <==> C++ if something return something then else something
+RRIFELSE() <==> C++ if something return something then else return something
+FOR() <==> C++ for -- for something condition something then
+
+DEL() <==> C++ func = 0 -- set the value of a function from it's value to 0
+
+Internet :
+
+CNCT() <==> C++ socket.socket.connect("server address");
+RECV() <==> C++ socket.socket.recv("receive from");
+SEND() <==> C++ socket.socket.send("datas to send");
+
+DWLD() <==> C++ socket.socket.connect("server address"); socket.socket.send("{'datas': 'dwld', 'options': {'command': 'download command', 'hash': 'optional'}}") INTERNET.recvdDatas = socket.socket.recv() -- download a specific file with some options
+
+Mathematics :
+
+CALC() <==> Calcul something with some given datas
+
+ADD <==> C++ + -- something + something
+REMV() <==> C++ - -- something - something
+MULTIP() <==> C++ * -- something * something
+DIVD() <==> C++ / -- something / something
+POWR() <==> C++ ^ -- something ^ something
+
+SMALR() <==> C++ < -- something smaller than something
+BIGR() <==> C++ > -- something bigger than something
+
+VEQUAL() <==> C++ = -- variable = something
+
+PEQUAL() <==> C++ += -- variable += something, variable = variable + something
+REQUAL() <==> C++ -= -- variable -= something, variable = variable - something
+DEQUAL() <==> C++ /= -- variable /= something, variable = variable / something
+MEQUAL() <==> C++ *= -- variable *= something, variable = variable * something
+EEQUAL() <==> C++ ^= -- variable ^= something, variable = variable ^ something
+
+ISEQUAL() <==> C++ == -- in the instruction if something equal to something
+NEQUAL() <==> C++ != -- in the instruction if something not equal to something
+
+Network :
+
+STOR() <==> Store some datas inside the NFC Chain -- create a new nfc inside the nfc chain
+MODIF() <==> Modify some datas inside the NFC Chain -- if an nfc is sent some someone to someone else
+DELT() <==> Delete some datas inside the NFC Chain -- if an nfc is burned
+
+Wallet :
+
+ATOK() <==> Ask tokens to a specific address
+STOK() <==> Send tokens to a specific address
+SMSG() <==> Send message to a specific address
+
+C++ instructions :
+
+
+if instruction in C++ :
+if (vn != 0 && vc1.size() != 0 && vc2.size() != 0 && operations.size() != 0) {
+    
+    if (vn == vc1.size() && vn == vc2.size()) {
+        
+        
+        
+    } else if (vn == vc1.size() && vn < vc2.size()) {
+        
+        
+        
+    } else if (vn == vc1.size() && vn > vc2.size()) {
+        
+        
+        
+    } else if (vn < vc1.size() && vn == vc2.size()) {
+        
+        
+        
+    } else if (vn < vc1.size() && vn < vc2.size()) {
+        
+        
+        
+    } else if (vn < vc1.size() && vn > vc2.size()) {
+        
+        
+        
+    } else if (vn > vc1.size() && vn == vc2.size()) {
+        
+        
+        
+    } else if (vn > vc1.size() && vn < vc2.size()) {
+        
+        
+        
+    } else if (vn > vc1.size() && vn > vc2.size()) {
+        
+        if (vc1.size() == vc2.size()) {
+            
+            
+            
+        } else if (vc1.size() < vc2.size()) {
+            
+            
+            
+        } else if (vc1.size() > vc2.size())
+        
+    }
+    
+}
+
+
+DWLD instruction in C++
+int DWLD(string server_address, string datas_to_download_hash) {
+    
+    string datas;
+    
+    internet_client.connect(server_address);
+    internet_client.send("{'datas': 'dwld', 'options': {'command': 'download command', 'hash': 'optional'}}");
+    datas = internet_client.recv()
+    datas = decrypt_socket_datas(datas);
+    internet_client.close();
+    return (datas)
+    
+};
