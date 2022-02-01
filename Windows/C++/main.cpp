@@ -18,9 +18,6 @@ namespace MAIN {
         unsigned short int reps = 0;
         string available_peers = [];
         
-        _INTERNET_.btclient.connect(peers[0]);
-        _INTERNET_.btclient.send("{'datas': 'how much peers do you have ?'}")
-        
         if (peers_list >= 32) {
             
             for (reps < peers_list.size()) {
@@ -45,7 +42,7 @@ namespace MAIN {
     }
     unsigned int find_peers(unsigned short int port) {
         
-        for () {
+        for (ips_tested < ips_possible) {
             
             _INTERNET_.btclient.connect();
             _INTERNET_.btclient.send();
