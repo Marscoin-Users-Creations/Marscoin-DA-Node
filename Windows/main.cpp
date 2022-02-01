@@ -13,7 +13,28 @@ namespace MAIN {
     
     function find_available_peers(int peers_list) {
         
-        if (_INTERNET_.btclient.recv()["peers"] == 32) {
+        unsigned short int reps = 0;
+        string available_peers = [];
+        
+        _INTERNET_.btclient.connect(peers[0]);
+        _INTERNET_.btclient.send("{'datas': 'how much peers do you have ?'}")
+        
+        if (peers_list >= 32) {
+            
+            for (reps < peers_list.size()) {
+                
+                _INTERNET_.btclient.connect();
+                _INTERNET_.btclient.send();
+                if (_INTERNET_.btclient.recv() == "{'datas': 'im available'}") {
+                    
+                    available_peers.append(peers_list[(reps)]);
+                    
+                };
+                
+            };
+            return ()
+            
+        } else {
             
             
             
