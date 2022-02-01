@@ -1,6 +1,8 @@
 #include <list>
 #include <string>
 
+#define ips_max 2^32
+
 #include "blockchain/blockchain.cpp"
 #include "config/config.cpp"
 #include "instructions/instructions.cpp"
@@ -8,6 +10,8 @@
 #include "nodefs/nodefs.cpp"
 #include "ui/ui.cpp"
 #include "wallet/wallet.cpp"
+
+string denied_ipv4_addresses = ["127.0.0.1", "192.168.1.0"];
 
 namespace MAIN {
     
