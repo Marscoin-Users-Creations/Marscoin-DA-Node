@@ -11,8 +11,6 @@
 #include "ui/ui.cpp"
 #include "wallet/wallet.cpp"
 
-string denied_ipv4_addresses = ["127.0.0.1", "192.168.1.0"];
-
 namespace MAIN {
     
     unsigned int find_available_peers(int peers_list) {
@@ -45,6 +43,16 @@ namespace MAIN {
         };
         
     }
+    unsigned int find_peers(unsigned short int port) {
+        
+        for () {
+            
+            _INTERNET_.btclient.connect();
+            _INTERNET_.btclient.send();
+            
+         };
+        
+    };
     
     int init() {
         
