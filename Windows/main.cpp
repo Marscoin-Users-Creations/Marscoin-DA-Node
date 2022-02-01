@@ -11,7 +11,7 @@
 
 namespace MAIN {
     
-    function find_available_peers(int peers_list) {
+    unsigned int find_available_peers(int peers_list) {
         
         unsigned short int reps = 0;
         string available_peers = [];
