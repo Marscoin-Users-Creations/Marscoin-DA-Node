@@ -11,7 +11,7 @@
 #include "ui/ui.cpp"
 #include "wallet/wallet.cpp"
 
-unsigned long int possible_ipv4_addresses = (255*255*255*255 - ((255*255*255*2)+(16*255*255)+(255*255)));
+unsigned long int possible_ipv4_addresses = (255*255*255*255 - ((255 * 255 * 255 * 2) + (16 * 255 * 255) + (255 * 255)));
 
 namespace MAIN {
     
