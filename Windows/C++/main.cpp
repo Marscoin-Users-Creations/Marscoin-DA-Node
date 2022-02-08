@@ -13,6 +13,8 @@ unsigned long int possible_ipv4_addresses = (255*255*255*255 - ((255 * 255 * 255
 
 namespace MAIN {
     
+    string peers = [];
+    
     unsigned int find_available_peers(int peers_list) {
         
         unsigned short int reps = 0;
@@ -67,7 +69,7 @@ namespace MAIN {
             
         } else {
             
-            peers.append(find_peers());
+            peers.append(find_peers(32 - peers.size()));
             
         };
         
