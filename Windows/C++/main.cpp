@@ -67,7 +67,7 @@ namespace MAIN {
             
         } else {
             
-            
+            peers.append(find_peers());
             
         };
         
