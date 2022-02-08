@@ -69,7 +69,7 @@ namespace MAIN {
             
         } else {
             
-            peers.append(find_peers(32 - peers.size()));
+            peers.append(find_peers(config["p2p"["port"]]));
             
         };
         
